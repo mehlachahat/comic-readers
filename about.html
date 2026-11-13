@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<title>About Comic Readers | Free Online Comic Reader</title>
+<meta name="description" content="Learn about Comic Readers: a free, ad-free website to read original comics online, its features, how to use it, and how it was built.">
+<link rel="canonical" href="https://YOUR-USERNAME.github.io/comic-readers/about.html">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Satish Kumar"><meta name="robots" content="index,follow"><meta name="theme-color" content="#ffd23f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%A5%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bangers&family=Lora:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="about">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="bar">
+<a class="logo" href="index.html" aria-label="Comic Readers home">COMIC<span>-READERS</span></a>
+<nav aria-label="Main navigation"><ul>
+<li><a href="index.html">Library</a></li>
+<li><a href="about.html" aria-current="page">About</a></li>
+<li><button class="btn" id="themeBtn" type="button">Theme: light</button></li>
+</ul></nav></div></header>
+<main id="main">
+<h1 style="font-family:var(--head);font-weight:400;font-size:clamp(2.4rem,6vw,4rem);margin:.5rem 0">About Comic Readers</h1>
+<section class="panel-box" aria-labelledby="what"><h2 id="what">What is this website?</h2>
+<p>Comic Readers is a free website where anyone can read short comics online. There are no accounts, no ads and no payments. Open a comic, read it, and come back any time: the site remembers the page you stopped on.</p>
+<p>Every comic here is original work, written and designed for this project, so it is safe to read and share.</p></section>
+<section class="panel-box" aria-labelledby="feat"><h2 id="feat">Features</h2>
+<ul>
+<li><strong>Adjustable text size:</strong> on the reading page, use A-, A+ or the slider (12px to 48px). Reset brings it back to 20px.</li>
+<li><strong>Font and line spacing:</strong> choose a clean sans, book serif, easy reading or typewriter font, and four line-spacing options.</li>
+<li><strong>Three themes:</strong> light, dark and sepia. The site starts in your device's preferred mode.</li>
+<li><strong>Two reading views:</strong> one page at a time, or scroll through the whole comic.</li>
+<li><strong>Saved progress:</strong> the library shows how much of each comic you have read and offers "Continue reading".</li>
+<li><strong>Favourites:</strong> tap the heart on a comic to save it, then filter by favourites.</li>
+<li><strong>Search, genre filter and sorting</strong> to find a comic quickly.</li>
+<li><strong>Read aloud:</strong> your browser reads the current page out loud.</li>
+<li><strong>Keyboard shortcuts:</strong> left and right arrows turn pages; + and - change text size.</li>
+<li><strong>Fullscreen and share link</strong> buttons.</li>
+<li><strong>Works on phones, tablets and computers,</strong> with accessible labels for screen readers.</li>
+</ul></section>
+<section class="panel-box" aria-labelledby="how"><h2 id="how">How to read a comic</h2>
+<ol><li>Open the <a href="index.html">Library</a> and choose a comic.</li><li>Press Next to turn pages, or switch to the scroll view.</li><li>Change the text size and font to suit your eyes.</li><li>Save the comic with the heart button if you want to return to it.</li></ol></section>
+<section class="panel-box" aria-labelledby="list"><h2 id="list">Comics available now</h2>
+<table><caption class="meta">Free comics in the library</caption><thead><tr><th scope="col">Title</th><th scope="col">Genre</th><th scope="col">Pages</th></tr></thead>
+<tbody id="aboutRows"></tbody></table></section>
+<section class="panel-box" aria-labelledby="priv"><h2 id="priv">Privacy</h2>
+<p>Your favourites, theme, text size and reading progress are stored only in your own browser (local storage). Nothing is sent to a server, and no personal data is collected.</p></section>
+<section class="panel-box" aria-labelledby="tech"><h2 id="tech">How it was built</h2>
+<p>Plain HTML5, CSS and JavaScript, with no frameworks. Semantic tags (header, nav, main, section, article, figure, footer) give each page a clear structure. Pages include a unique title, a meta description, heading hierarchy, image alternative text, structured data, a sitemap and a robots file to support search engine optimisation.</p></section>
+<section class="panel-box" aria-labelledby="who"><h2 id="who">About the creator</h2>
+<p>Created by <strong>Satish Kumar</strong> as an individual practical assignment for the Digital Marketing course (Webpage, SEO &amp; Digital Marketing).</p></section>
+</main>
+<footer class="site-footer"><p>&copy; <span id="year">2026</span> Comic Readers. Created by Satish Kumar. All comics are original and free to read.</p>
+<ul><li><a href="index.html">Library</a></li><li><a href="about.html">About</a></li><li><a href="https://github.com/" rel="noopener">GitHub</a></li></ul></footer>
+<script src="js/comics.js"></script><script src="js/app.js"></script>
+<script>document.getElementById('aboutRows').innerHTML=window.COMICS.map(function(c){return '<tr><td><a href="reader.html?comic='+c.id+'">'+c.title+'</a></td><td>'+c.genre+'</td><td>'+c.pages.length+'</td></tr>'}).join('')</script>
+</body></html>

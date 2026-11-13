@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Comic Readers | Read Free Comics Online</title>
+<meta name="description" content="Comic Readers is a free website to read original online comics. Adjust font size, switch themes, save favourites and continue where you left off.">
+<meta name="keywords" content="read comics online, free comics, online comic reader, webcomics, adventure comics, sci-fi comics">
+<meta name="author" content="Satish Kumar"><meta name="robots" content="index,follow">
+<link rel="canonical" href="https://YOUR-USERNAME.github.io/comic-readers/">
+<meta property="og:type" content="website"><meta property="og:title" content="Comic Readers | Read Free Comics Online"><meta property="og:description" content="Read free original comics online with adjustable text size and dark mode.">
+<meta name="theme-color" content="#ffd23f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%A5%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bangers&family=Lora:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Comic Readers","url":"https://YOUR-USERNAME.github.io/comic-readers/","description":"Free online comic reader","author":{"@type":"Person","name":"Satish Kumar"}}</script>
+</head>
+<body data-page="home">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="bar">
+<a class="logo" href="index.html" aria-label="Comic Readers home">COMIC<span>-READERS</span></a>
+<nav aria-label="Main navigation"><ul>
+<li><a href="index.html" aria-current="page">Library</a></li>
+<li><a href="about.html">About</a></li>
+<li><button class="btn" id="themeBtn" type="button">Theme: light</button></li>
+</ul></nav></div></header>
+<main id="main">
+<section class="hero" aria-labelledby="h1">
+<div><h1 id="h1">Read free comics online</h1>
+<p>Pick a story, read it page by page, and make the text as big or small as you like. Your progress and favourites are saved on this device.</p>
+<a class="btn primary" href="#library">Browse the library</a></div>
+<div class="burst" role="note">04 free comics<small>No sign-up. No ads.</small></div>
+</section>
+<section id="continue" class="panel-box" hidden></section>
+<section id="library" aria-labelledby="lib">
+<h2 id="lib">Comic library</h2>
+<div class="tools" role="search">
+<label for="q" class="meta">Search</label><input id="q" type="search" placeholder="Search by title or topic">
+<label for="genre" class="meta">Genre</label><select id="genre"><option value="all">All genres</option></select>
+<label for="sort" class="meta">Sort</label><select id="sort"><option value="default">Featured</option><option value="az">A to Z</option><option value="short">Shortest first</option></select>
+<label class="meta"><input type="checkbox" id="favOnly"> Favourites only</label>
+</div>
+<p id="count" class="meta" aria-live="polite"></p>
+<ul class="grid" id="grid"></ul>
+</section>
+<section class="panel-box" aria-labelledby="all"><h2 id="all">All comics at a glance</h2>
+<ul>
+<li><a href="reader.html?comic=captain-chai">Captain Chai and the Missing Monsoon</a>: A tea-loving hero must wake a sleepy cloud before the city dries up.</li>
+<li><a href="reader.html?comic=pixel-dreams">Pixel the Robot Learns to Dream</a>: A curious robot builds a machine to find out what sleep feels like.</li>
+<li><a href="reader.html?comic=library-ghost">The Library Ghost</a>: Books keep moving at midnight. Meera sets out to find the culprit.</li>
+<li><a href="reader.html?comic=little-seed">Little Seed</a>: A tiny seed under a stone grows into something far bigger than it imagined.</li>
+</ul></section>
+</main>
+<footer class="site-footer"><p>&copy; <span id="year">2026</span> Comic Readers. Created by Satish Kumar. All comics are original and free to read.</p>
+<ul><li><a href="index.html">Library</a></li><li><a href="about.html">About</a></li><li><a href="https://github.com/" rel="noopener">GitHub</a></li></ul></footer>
+<script src="js/comics.js"></script><script src="js/app.js"></script>
+</body></html>

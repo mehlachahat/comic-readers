@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<title>Read Comic | Comic Readers</title>
+<meta name="description" content="Read free comics online at Comic Readers with adjustable font size, themes and saved progress.">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Satish Kumar"><meta name="robots" content="index,follow"><meta name="theme-color" content="#ffd23f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%A5%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bangers&family=Lora:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="reader">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="bar">
+<a class="logo" href="index.html" aria-label="Comic Readers home">COMIC<span>-READERS</span></a>
+<nav aria-label="Main navigation"><ul>
+<li><a href="index.html">Library</a></li>
+<li><a href="about.html">About</a></li>
+<li><button class="btn" id="themeBtn" type="button">Theme: light</button></li>
+</ul></nav></div></header>
+<main id="main">
+<div class="reader-head"><p><a href="index.html">&larr; Back to library</a></p><h1 id="title">Loading comic...</h1><p id="sub"></p></div>
+<section class="toolbar" id="tools" aria-label="Reading settings">
+<div class="grp"><span id="sl">Text size</span>
+<button class="btn" id="minus" type="button" aria-label="Decrease text size">A-</button>
+<input id="size" type="range" min="12" max="48" step="2" value="20" aria-labelledby="sl">
+<button class="btn" id="plus" type="button" aria-label="Increase text size">A+</button>
+<span class="size-val" id="sizeVal" aria-live="polite">20px</span>
+<button class="btn" id="reset" type="button">Reset</button></div>
+<div class="grp"><label for="font">Font</label><select id="font"><option value="sans">Clean sans</option><option value="serif">Book serif</option><option value="easy">Easy reading</option><option value="mono">Typewriter</option></select></div>
+<div class="grp"><label for="lh">Line spacing</label><select id="lh"><option value="1.4">Tight</option><option value="1.7">Normal</option><option value="2">Relaxed</option><option value="2.4">Wide</option></select></div>
+<div class="grp"><label for="mode">View</label><select id="mode"><option value="page">One page at a time</option><option value="scroll">Scroll all pages</option></select></div>
+<div class="grp"><button class="btn" id="speak" type="button">Read aloud</button>
+<button class="btn" id="favBtn" type="button" aria-pressed="false">♡ Save</button>
+<button class="btn" id="full" type="button">Fullscreen</button>
+<button class="btn" id="share" type="button">Share</button></div>
+</section>
+<div class="bar-wrap" role="progressbar" aria-label="Reading progress"><i id="prog"></i></div>
+<section id="pages" aria-live="polite"></section>
+<div class="pager" id="pager"><button class="btn" id="prev" type="button">&larr; Previous</button><span class="count" id="cnt"></span><button class="btn primary" id="next" type="button">Next &rarr;</button></div>
+<p class="meta">Tip: use the left and right arrow keys to turn pages, and + or - to change text size.</p>
+<section id="done" class="panel-box" hidden><h2>The end</h2><p id="nextComic"></p><a class="btn" href="index.html">Back to library</a></section>
+<noscript><p class="empty">Please turn on JavaScript to read comics on this page.</p></noscript>
+</main>
+<footer class="site-footer"><p>&copy; <span id="year">2026</span> Comic Readers. Created by Satish Kumar. All comics are original and free to read.</p>
+<ul><li><a href="index.html">Library</a></li><li><a href="about.html">About</a></li><li><a href="https://github.com/" rel="noopener">GitHub</a></li></ul></footer>
+<script src="js/comics.js"></script><script src="js/app.js"></script>
+</body></html>
